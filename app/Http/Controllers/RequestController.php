@@ -25,7 +25,7 @@ class RequestController extends Controller
             'flights' => 'required|array',
             'flights.*.from' => 'required|string|size:3',
             'flights.*.to' => 'required|string|size:3',
-            'flights.*.date' => 'required|date|after:today',
+            'flights.*.date' => 'required|date',
             'preferences' => 'required|array',
             'preferences.quotes_via_sms' => 'required|boolean',
             'timezone' => 'required|string'
